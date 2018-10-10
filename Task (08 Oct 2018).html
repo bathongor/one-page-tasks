@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<style>
+#RedButton{
+	text-transform: uppercase;
+    font-size: 40px;
+	margin-top: 25%; 
+	margin-left: 25%; 
+    width: 160px;
+    height: 90px
+}
+
+#BlueButton{
+	text-transform: uppercase;
+    font-size: 40px;
+    width: 160px;
+    height: 90px
+}
+
+</style>
+
+<html>
+
+	<head>
+		
+	</head>
+
+	<body>
+		
+	
+		<button id="RedButton" type="button">Red</button>
+		<button id="BlueButton" type="button">Blue</button>
+        
+    
+		<p id="textfield"></p>
+		
+	</body>  
+	
+	<script>
+		document.getElementById('RedButton').onclick= function(){	
+			document.getElementsByTagName('Body')[0].style.backgroundColor = "red"; 
+		}
+	</script>	
+    
+    <script>
+		document.getElementById('BlueButton').onclick= function(){	
+			document.getElementsByTagName('Body')[0].style.backgroundColor = "blue"; 
+		}
+		
+	</script>
+
+
+</html>
