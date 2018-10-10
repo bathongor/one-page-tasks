@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<style>
+	#bigtitle{
+		display: block;
+		font-size: 60px;
+	}
+
+
+</style>
+
+<html>
+
+	<head>
+		
+	</head>
+
+	<body>
+		<center><h2 id="bigtitle">This is the Title</h2></center>
+		<center><h1 id="ClickMe">0</h1></center>
+
+		<center><input id="eventClick" type="button" value="Incrementally Increase"></center>
+		
+		
+		<!--<form action="/submit-text">-->
+			<input id="textmessage" type="text" placeholder="Enter Your Text" required>
+			<button id="submission" type="button">Submit</button>
+		<!--</form>-->
+		
+		<p id="textfield"></p>
+		
+	</body>  
+	
+	<script>
+		document.getElementById('eventClick').onclick= function(){	
+			document.getElementById('ClickMe').innerHTML++; 
+		}
+	</script>	
+    
+    <script>
+		document.getElementById('submission').onclick= function(){
+			document.getElementById('textfield').innerHTML = document.getElementById('textmessage').value; 
+		}
+		
+	</script>
+
+
+</html>
+
